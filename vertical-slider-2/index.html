@@ -11,13 +11,28 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="toggle">
-    <label>Vertical</label>
-    <input type="checkbox" name="orientation" id="orientation">
-    <label class="input" for="orientation">
-      <div class="after"></div>
-    </label>
-    <label>Horizontal</label>
+  <div class="menu top-menu">
+    <div class="toggle">
+      <label>Vertical</label>
+      <input type="checkbox" name="orientation" id="orientation">
+      <label class="input" for="orientation">
+        <div class="after"></div>
+      </label>
+      <label>Horizontal</label>
+    </div>
+  </div>
+  <div class="menu bottom-menu">
+    <div class="tooltip">?
+      <div class="tooltip-description">
+        <span>How to control:</span>
+        <ol>
+          <li>Buttons on slider</li>
+          <li>Keyboard arrows</li>
+          <li>Mouse swipes</li>
+          <li>Mouse wheel</li>
+        </ol>
+      </div>
+    </div>
   </div>
   <div class="container vertical-slider">
     <div class="slider first-slider">
