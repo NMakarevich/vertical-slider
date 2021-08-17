@@ -15,5 +15,6 @@
 1. HTML and CSS fully rewrite, JS particially rewrite and extends from first version of slider
 2. Add toggle to change slider orientation vertical -> horizontal
 3. For horizontal slider add Left and Right keyboard arrows
+4. Add slider control by mouse wheel
 
 [View slider](https://nmakarevich.github.io/vertical-slider/vertical-slider-2/)
