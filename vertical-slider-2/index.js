@@ -50,6 +50,7 @@ carousel.addEventListener('click', changeSlide);
 carousel.addEventListener('pointerdown', pointerDown);
 carousel.addEventListener('pointerup', pointerUp);
 document.addEventListener('keyup', keyUp);
+document.addEventListener('wheel', wheel);
 
 function keyUp(event) {
   const keyCode = event.code;
@@ -58,6 +59,15 @@ function keyUp(event) {
   }
   if(keyCode == 'ArrowDown' || keyCode == 'ArrowRight') {
     slideBackward();
+  }
+}
+
+function wheel(event) {
+  if(event.deltaY > 0) {
+    slideForward()
+  }
+  if(event.deltaY < 0) {
+    slideBackward()
   }
 }
 
@@ -107,14 +117,14 @@ function removeShiftingClass() {
 
 function slideForward() {
   addShiftingClass()
-  currentSlide++;
+  if (allowShift) currentSlide++;
   slideMove()
   allowShift = false;
 }
 
 function slideBackward() {
   addShiftingClass()
-  currentSlide--;
+  if (allowShift) currentSlide--;
   slideMove()
   allowShift = false;
 }
