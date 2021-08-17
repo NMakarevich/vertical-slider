@@ -97,7 +97,7 @@ h2 {
   background: rgba(0, 0, 0, 0.7);
   border-radius: 5px;
   opacity: 0;
-  transition: opacity .3s;
+  transition: all .3s;
 }
 
 .tooltip-description::after {
